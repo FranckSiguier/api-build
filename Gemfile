@@ -64,3 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "pundit", "~> 2.1"
 
 gem "simple_token_authentication", "~> 1.17"
+
+gem "rest-client", "~> 2.1"
+
+gem "amazing_print", "~> 1.2"
