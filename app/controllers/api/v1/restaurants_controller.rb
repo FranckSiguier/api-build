@@ -23,7 +23,7 @@ class Api::V1::RestaurantsController < Api::V1::BaseController
     @restaurant.user = current_user
     authorize @restaurant
     if @restaurant.save
-      render :show, status: :created
+      redirect_to api_v1_restaurants_path
     else
       render_error
     end
@@ -32,8 +32,6 @@ class Api::V1::RestaurantsController < Api::V1::BaseController
   def destroy
     @restaurant.destroy
     head :no_content
-    render :index
-    # No need to create a `destroy.json.jbuilder` view
   end
 
   private

@@ -65,6 +65,6 @@ gem "pundit", "~> 2.1"
 
 gem "simple_token_authentication", "~> 1.17"
 
-gem "rest-client", "~> 2.1"
+gem "httparty"
 
 gem "amazing_print", "~> 1.2"
